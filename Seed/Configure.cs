@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+
+namespace Seed
+{
+    public class Configure : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+        private bool _measureStatus;
+
+        public bool MeasureStatus
+        {
+            get
+            {
+                return _measureStatus;
+            }
+            set
+            {
+                _measureStatus = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("MeasureStatus"));
+            }
+        }
+    }
+}
