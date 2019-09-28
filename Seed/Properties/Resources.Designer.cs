@@ -61,12 +61,12 @@ namespace Seed.Properties {
         }
         
         /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap mainphoto {
+        internal static byte[] mainphoto {
             get {
                 object obj = ResourceManager.GetObject("mainphoto", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ((byte[])(obj));
             }
         }
     }

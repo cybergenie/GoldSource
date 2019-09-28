@@ -14,7 +14,7 @@
     <Window.DataContext>
         <vm:MainVM/>
     </Window.DataContext>
-    <Grid x:Name="sGrid">  
+    <Grid x:Name="sGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="45"/>
             <RowDefinition Height="250"/>
@@ -27,8 +27,8 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="4*"/>
                 <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Image Source="pack://siteoforigin:,,,/Resources/mainphoto.bmp" IsEnabled="False"/>
+            </Grid.ColumnDefinitions>            
+                <Image Source="/Resources/mainphoto.bmp" Width="400" Height="250                       "/>                        
             <Button x:Name="btStart" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Content="{Binding conf.MeasureStatus, Converter={StaticResource TextConverter}, Mode=OneWay}" FontSize="18" Click="btStart_Click" Background="{Binding conf.MeasureStatus, Converter={StaticResource StartConverter}, Mode=TwoWay, NotifyOnTargetUpdated=True, NotifyOnSourceUpdated=True}" />
         </Grid>
         <DataGrid Grid.Row="2" Margin="5,0" >
